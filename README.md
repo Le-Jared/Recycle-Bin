@@ -9,20 +9,18 @@ Move the scripts to a location in your PATH for easy access, e.g., mv recycle ~/
 # Usage
 <u>Recycle Script</u>
 The recycle script is designed to emulate the rm command. To delete a file, the script should be executed as follows:
-'''bash recycle fileName
+<pre>bash recycle fileName</pre>
 The deleted file is moved to a directory named recyclebin in your home directory. The filenames in the recyclebin will be in the format fileName_inode.
 
 You can also delete multiple files or directories using the -r option, just like with the rm command. For instance:
-
-
-bash recycle -r dirName
+<pre>bash recycle -r dirName</pre>
 And to interactively delete files or display deletion messages, use the -i and -v options, respectively. For instance:
 
-bash recycle -iv fileName
+<pre>bash recycle -iv fileName</pre>
 
 <u>Restore Script</u>
 To restore a file, the script should be executed as follows:
-<pre>```bash restore fileName_inode```</pre>
+<pre>bash restore fileName_inode</pre>
 This command moves the file with the name fileName_inode from the recyclebin directory back to its original location.
 
 The script checks if a file with the same name already exists in the target location. If so, it asks for confirmation before overwriting the existing file.
