@@ -7,7 +7,7 @@ Ensure that the scripts have the necessary execution permissions. You can add ex
 Move the scripts to a location in your PATH for easy access, e.g., mv recycle ~/bin and mv restore ~/bin.
 
 # Usage
-<u>Recycle Script</u>
+**Recycle Script**
 The recycle script is designed to emulate the rm command. To delete a file, the script should be executed as follows:
 <pre>bash recycle fileName</pre>
 The deleted file is moved to a directory named recyclebin in your home directory. The filenames in the recyclebin will be in the format fileName_inode.
@@ -18,7 +18,7 @@ And to interactively delete files or display deletion messages, use the -i and -
 
 <pre>bash recycle -iv fileName</pre>
 
-<u>Restore Script</u>
+**Restore Script**
 To restore a file, the script should be executed as follows:
 <pre>bash restore fileName_inode</pre>
 This command moves the file with the name fileName_inode from the recyclebin directory back to its original location.
